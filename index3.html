@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Verdana;
+            margin: 0;
+        }
+        header{
+            background-color: #ff703c;
+            color: white;
+            padding: 0 10%;
+        }
+        header > h1 {
+          display: inline-block;
+          margin-left: 30px;
+        }
+        #logo {
+          width: 80px;
+        } 
+        nav {
+          margin: 10px 10%;
+        }
+        nav > a {
+          padding: 0 10 px;
+        }
+        #pokedex {
+            width: 750px;
+            margin: 50px auto;
+        }
+        #left {
+            width: 250px;
+            height: 300px;
+            float: left;
+            background-color: #db411a;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        #right {
+            width: 250px;
+            height: 250px;
+            margin-top: 50px;
+            background-color: #ec2a2a;
+            border-left-color: #881d1d;
+            border-left-style: solid;
+            border-left-width: 3px;
+            float: left;
+            border-bottom-right-radius: 30px;
+        }
+        .display {
+            border-color: #000000;
+            border-style: solid;
+            border-radius: 15px;
+            border-width: 5px; 
+        }
+        #left > .display {
+          width: 180px;
+          height: 150px;
+          margin-left: 35px;
+          margin-top: 40px;
+          background-color: white;
+        }
+        #left > .display > img{
+            margin-left: 15px;
+            height: 100%;
+        }
+        #dpad {
+            width: 60px;
+            height: 60px;
+            margin-top: 15px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        #dpad-top, #dpad-bottom {
+          width: 20px;
+          height: 20px;
+          margin-left: 20px;
+          background-color: #222222;
+        }
+        #dpad-horizontal {
+            width: 60px;
+            height: 20px;
+            background-color: #222222;
+        }
+        #btn-circle {
+            width: 50px;
+            height: 50px;
+            margin-left: 95px;
+            border-style: solid;
+            border-color: #000000;
+            border-radius: 25px;
+            background-color: #000000;
+            display: inline-block;
+        }
+         #right > .display {
+            width: 180px;
+            height: 120px;
+            margin-left: 35px;
+            margin-top: 20px;
+            background-color:white;
+            font-size: 12px;
+        }
+        #pad {
+            width: 148px;
+            height: 65px;
+            margin-left: 60px;
+            margin-top: 15px;
+        }
+        #pad > .btn {
+            width: 25px;
+            height: 25px;
+            background-color: #000000;
+            display: inline-block;
+            border-style: solid;
+            border-color: #000000;
+            border-width: 2px;
+            border-radius: 3px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style-type: none;
+        }
+        li > p {
+            margin: 0 5px;
+        }
+    </style>
+    <header>
+        <img id="logo" src="C:\Users\palom\Downloads\pokebol-removebg-preview.png" alt="logo">
+        <h1>Mi Pokédex</h1>
+    </header>
+    <nav>
+        <a href="https://www.google.com/">Inicio</a>
+        <a href="https://www.google.com/">Acerca</a>
+    </nav>
+    <hr>
+    <main>
+        <div id="pokedex">
+            <div id="left">
+                <div class="display">
+                  <img src="C:\Users\palom\Downloads\squirtle-removebg-preview.png" alt="pokemon">
+            </div>
+            <div id="dpad">
+                <div id="dpad-top"></div>
+                <div id="dpad-horizontal"></div>
+                <div id="dpad-bottom"></div>
+            </div>
+            <div id="btn-circle"></div>
+            </div>
+            <div id="right">
+              <div class="display">
+               <ul>
+                 <li>
+                    <p><b>Nombre:</b>Squirtle</p>
+                </li>
+                <li>
+                    <p><b>Tipo:</b>Agau</p>
+                </li>
+                <li>
+                    <p><b>Altura:</b>0,5 m</p>
+                </li>
+                <li>
+                    <p><b>Peso:</b>9,0 kg</p>
+                </li>
+                <li>
+                    <p><b>Descripción:</b>puede manipular el agua o usarlos de ataque</p>
+                </li>
+               </ul> 
+              </div>
+              <div id="pad">
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+              </div>
+            </div>
+            </div>
+         </main>
+
+         <script type="text/javascript" src="https://casas36.github.io/json/"></script>
+         <script>
+            buscar();
+         </script>
+    </body>
+    </html>
